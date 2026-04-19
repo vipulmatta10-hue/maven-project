@@ -19,5 +19,10 @@ public class SampleTest {
 	public void Case4() {
 		System.out.println("Test Case 4");
 	}
+	
+	@Test
+	public void Case5() {
+		System.out.println("Test Case 5");
+	}
 
 }
