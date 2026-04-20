@@ -24,5 +24,4 @@ public class SampleTest {
 	public void Case5() {
 		System.out.println("Test Case 5");
 	}
-
 }
