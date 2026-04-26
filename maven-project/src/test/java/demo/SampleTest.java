@@ -9,11 +9,11 @@ public class SampleTest {
 	}
 	@Test
 	public void Case2() {
-		System.out.println("Test Case 1");
+		System.out.println("Test Case 2");
 	}
 	@Test
 	public void Case3() {
-		System.out.println("Test Case 1");
+		System.out.println("Test Case 3");
 	}
 	@Test
 	public void Case4() {
