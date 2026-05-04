@@ -29,7 +29,8 @@
 					  <artifactId>maven-surefire-plugin</artifactId>
 					  <version>3.5.4</version>
 					  <configuration>
-						<suiteXmlFiles>smoke.xml</suiteXmlFiles>					  
+						<suiteXmlFiles>smoke.xml</suiteXmlFiles>
+											  
 					  </configuration>					  
 				  </plugin>
 			  </plugins>
@@ -71,6 +72,13 @@
     <groupId>io.qameta.allure</groupId>
     <artifactId>allure-testng</artifactId>
     <version>2.24.0</version>
+</dependency>
+
+<dependency>
+    <groupId>org.aspectj</groupId>
+    <artifactId>aspectjweaver</artifactId>
+    <version>1.9.25.1</version>
+    <scope>runtime</scope>
 </dependency>
 </dependencies>
 </project>
