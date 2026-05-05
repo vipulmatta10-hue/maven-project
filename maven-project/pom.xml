@@ -13,14 +13,14 @@
 					  <artifactId>maven-surefire-plugin</artifactId>
 					  <version>3.5.4</version>
 					  <configuration>
-						<suiteXmlFiles>testng.xml</suiteXmlFiles>
-						<argLine>
-                           -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar"
-                        </argLine>
-                        <systemPropertyVariables>
-            <!-- Forces the results to the target folder -->
+					  <systemPropertyVariables>
+            <!-- This line forces results into the target folder -->
             <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
-        </systemPropertyVariables>				  
+        </systemPropertyVariables>
+        <argLine>
+            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar"
+        </argLine>
+						<suiteXmlFiles>testng.xml</suiteXmlFiles>				  
 					  </configuration>					  
 				  </plugin>
 			  </plugins>
@@ -36,14 +36,14 @@
 					  <artifactId>maven-surefire-plugin</artifactId>
 					  <version>3.5.4</version>
 					  <configuration>
-						<suiteXmlFiles>smoke.xml</suiteXmlFiles>
-						<argLine>
-                           -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar"
-                        </argLine>
-                        <systemPropertyVariables>
-            <!-- Forces the results to the target folder -->
+					  <systemPropertyVariables>
+            <!-- This line forces results into the target folder -->
             <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
-        </systemPropertyVariables>					  
+        </systemPropertyVariables>
+        <argLine>
+            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar"
+        </argLine>
+						<suiteXmlFiles>smoke.xml</suiteXmlFiles>					  
 					  </configuration>					  
 				  </plugin>
 			  </plugins>
