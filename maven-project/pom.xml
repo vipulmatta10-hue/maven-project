@@ -16,7 +16,11 @@
 						<suiteXmlFiles>testng.xml</suiteXmlFiles>
 						<argLine>
                            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar"
-                        </argLine>				  
+                        </argLine>
+                        <systemPropertyVariables>
+            <!-- Forces the results to the target folder -->
+            <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+        </systemPropertyVariables>				  
 					  </configuration>					  
 				  </plugin>
 			  </plugins>
@@ -35,7 +39,11 @@
 						<suiteXmlFiles>smoke.xml</suiteXmlFiles>
 						<argLine>
                            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar"
-                        </argLine>					  
+                        </argLine>
+                        <systemPropertyVariables>
+            <!-- Forces the results to the target folder -->
+            <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+        </systemPropertyVariables>					  
 					  </configuration>					  
 				  </plugin>
 			  </plugins>
