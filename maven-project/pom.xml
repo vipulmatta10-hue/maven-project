@@ -13,7 +13,10 @@
 					  <artifactId>maven-surefire-plugin</artifactId>
 					  <version>3.5.4</version>
 					  <configuration>
-						<suiteXmlFiles>testng.xml</suiteXmlFiles>					  
+						<suiteXmlFiles>testng.xml</suiteXmlFiles>
+						<argLine>
+                           -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar"
+                        </argLine>				  
 					  </configuration>					  
 				  </plugin>
 			  </plugins>
@@ -29,7 +32,10 @@
 					  <artifactId>maven-surefire-plugin</artifactId>
 					  <version>3.5.4</version>
 					  <configuration>
-						<suiteXmlFiles>smoke.xml</suiteXmlFiles>					  
+						<suiteXmlFiles>smoke.xml</suiteXmlFiles>
+						<argLine>
+                           -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar"
+                        </argLine>					  
 					  </configuration>					  
 				  </plugin>
 			  </plugins>
@@ -70,7 +76,8 @@
 <dependency>
     <groupId>io.qameta.allure</groupId>
     <artifactId>allure-testng</artifactId>
-    <version>2.24.0</version>
+    <version>2.34.0</version>
+    <scope>compile</scope>
 </dependency>
 
 <dependency>
