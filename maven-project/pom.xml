@@ -13,16 +13,9 @@
 					  <artifactId>maven-surefire-plugin</artifactId>
 					  <version>3.5.4</version>
 					  <configuration>
-					  <properties>
-        <property>
-            <name>usedefaultlisteners</name>
-            <value>false</value>
-        </property>
-        <property>
-            <name>listener</name>
-            <value>io.qameta.allure.testng.AllureTestNg</value>
-        </property>
-    </properties>
+					  <systemPropertyVariables>
+            <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+        </systemPropertyVariables>
 						<suiteXmlFiles>testng.xml</suiteXmlFiles>				  
 					  </configuration>					  
 				  </plugin>
@@ -39,16 +32,9 @@
 					  <artifactId>maven-surefire-plugin</artifactId>
 					  <version>3.5.4</version>
 					  <configuration>
-					  <properties>
-        <property>
-            <name>usedefaultlisteners</name>
-            <value>false</value>
-        </property>
-        <property>
-            <name>listener</name>
-            <value>io.qameta.allure.testng.AllureTestNg</value>
-        </property>
-    </properties>
+					  <systemPropertyVariables>
+            <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+        </systemPropertyVariables>
 						<suiteXmlFiles>smoke.xml</suiteXmlFiles>					  
 					  </configuration>					  
 				  </plugin>
